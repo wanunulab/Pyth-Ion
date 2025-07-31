@@ -1,0 +1,36 @@
+[project]
+name = "PythIon_Zhuoyu"
+dynamic = ["version"]
+authors = [
+    { name = "Zhuoyu" },
+    { name = "Bobby" }
+]
+description = "PythIon evolved and finally to be reimplemented with backend on Ioniq and a user-friendlier front UI. "
+readme = "README.md"
+dependencies = [
+    "PyQt5",
+    "pyqtgraph",
+    "numpy",
+    "scipy",
+    "tqdm",
+    "colorcet",
+    "pyyaml",
+    "matplotlib"
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Private :: Do Not Upload"
+]
+
+[project.scripts]
+PythIon = "PythIon.entrypoint:entry"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr="PythIon.__version__.__version__"}
+
+[tool.setuptools.packages.find]
+exclude = ["PythIon.backups*", "PythIon.build*", "PythIon.dist*", "PythIon.ioniq*", "PythIon.legacy*", "start_pythion.py"]

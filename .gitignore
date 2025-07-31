@@ -1,2 +1,17 @@
-*.pyc
-*.code-workspace
+/PythIon/build/
+/PythIon/dist/
+/PythIon/Pythion.spec
+/PythIon/__pycache__/
+/PythIon/ioniq/
+/PythIon/backups/
+/PythIon/legacy/
+/PythIon/Sample Data/
+/PythIon/note.md
+__pycache__/
+/dist
+/build
+/*.egg-info
+
+
+
+
