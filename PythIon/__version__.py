@@ -1,4 +1,4 @@
-__version__='20250323r1'
+__version__='20250715r1'
 
 """
 Updates
@@ -93,4 +93,9 @@ Updates
 20250323r1
 ----
 * Fixed Y axis display issue on multiple displays with different scales
+
+20250715r1
+----
+* Added selection inspection feature
+
 """
